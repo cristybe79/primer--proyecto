@@ -1,0 +1,17 @@
+@mixin style ($color, $size, $weight) {
+    color:$color;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin flex($display1,$direction,$jc,$ai){
+    display: $display1;
+    flex-direction: $direction;
+    justify-content: $jc;
+    text-align: $ai;
+}
+@mixin grid($display,$columns,$row,$cg){
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $row;
+    grid-column-gap:$cg;
+}

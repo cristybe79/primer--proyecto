@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  width:99vw ;
+
+  background-color: rgb(19, 18, 18);
+  @include flex(flex, column, initial, start);
+  @media screen and(max-width:$desktop) {
+    background-color: $colorTres;
+  }
+  @media screen and(max-width:$tablet) {
+    background-color: $colorUno;
+  }
+  @media (max-width: $celular) {
+    .grid {
+      @include grid(grid, 1fr, 1fr, 1rem);
+    }
+    background-color: $colorCinco;
+  }
+  @media (max-width: 350px) {
+    background-color: $colorSeis;
+  }
+}

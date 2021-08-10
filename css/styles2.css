@@ -1,0 +1,257 @@
+/* .fijoIndex {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(19, 18, 18)
+    ),
+    url(http://127.0.0.1:5500/img/irlanda.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* barra de navegacion */
+/* .gridHeader {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 17% 15%;
+} */
+
+/* logo */
+/* .fijo {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 15%;
+  background-image: url(http://127.0.0.1:5500/img/irlanda.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+} */
+
+/* 
+.logo {
+  width: 100vw;
+  height: 20vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.imagenLogo1 {
+  width: 25vw;
+  animation: aparecer 2s infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.letraLogo {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: underline;
+  color: black;
+  line-height: none;
+} */
+/* body */
+
+/* PAGINA INICIO   */
+
+/* foto izq pagina inicio */
+
+/* .foto1 {
+  width: 60vw;
+  height: 60vh;
+}
+.imgf1 {
+  width: 60vw;
+  height: 60vh;
+} */
+/* .texto1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 40vw;
+  height: 60vh;
+  overflow: hidden;
+} */
+
+/* .tituloLetra {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 3vh;
+  color: rgb(44, 58, 58);
+}
+li {
+  color: azure;
+} */
+/* letras izq pagina inicio */
+
+/* letrasdelascanciones pagina inicio */
+/* .letra {
+  margin-right: 1vw;
+  font-family: "Noto Sans", sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 1.3rem;
+}
+.tema1 {
+  text-align: left;
+  color: rgb(22, 57, 63);
+}
+
+.tema2 {
+  text-align: right;
+  color: #4a566d;
+} */
+
+/* Paginahistioria */
+/* .historiaDeLaBanda {
+  margin: 5vh;
+  padding-left: 15vh;
+  padding-right: 20vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #7e8083;
+  overflow: hidden;
+} */
+/* <tabla Pagina Discografia-->*/
+/* .discografia img {
+  width: 400px;
+}
+.discografia {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.albums {
+  margin-left: 20vh;
+  width: 100vw;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.albums div {
+  text-align: column;
+  width: 100vw;
+  margin-bottom: 1.5rem;
+} */
+/* .disco {
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
+} */
+/* .disco1 {
+  color: cadetblue;
+  font-family: "Noto Sans", sans-serif;
+}
+.listaMusica {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+} */
+/* pagina GALERIA */
+
+/* paginaplaylist */
+/* .letraPlaylist {
+  padding: 10px;
+  line-height: 1.3rem;
+  color: aliceblue;
+  font-family: "Noto Sans", sans-serif;
+}
+.play1 {
+  width: 100vw;
+  height: 60vh;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.playA {
+  width: 50%;
+  height: 50%;
+  margin: 35px;
+} */
+/* paginaeventos */
+
+/* .eventos {
+  margin: 30px 10px 0px 60px;
+} */
+
+/* Pagina Contacto */
+/* .contacto {
+  border: black solid;
+  height: 50vh;
+  width: 50vw;
+  margin-left: 33%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: end;
+} */
+
+/* .suscripcion {
+  background-color: cornflowerblue;
+  padding: 0.8vh 1vh;
+}
+.encuesta {
+  background-color: cyan;
+} */
+
+/* footertodaslaspaginas */
+/* footer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.imgf {
+  width: 10px;
+  padding: 10px;
+} */
+
+/* @media (max-width: 981px) {
+  body {
+    background-color: rgb(67, 110, 110);
+  }
+
+} */
+/* @media (max-width: 516px) {
+  body {
+    background-color: rgb(86, 119, 119);
+  }
+}
+@media (max-width: 350px) {
+  .galeria {
+    grid-template-areas:
+      "galeria1"
+      "galeria2"
+      "galeria3";
+  }
+  .discografia img {
+    width: 200px;
+  }
+  .albums {
+    flex-direction: column;
+  }
+  body {
+    background-color: rgb(108, 190, 190);
+  }
+} */

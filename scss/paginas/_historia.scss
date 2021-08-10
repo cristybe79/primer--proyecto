@@ -1,0 +1,11 @@
+.historiaDeLaBanda {
+  margin: 5vh;
+  padding-left: 15vh;
+  padding-right: 20vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  text-align: justify;
+  @include style($colorDos,$textSize,300);
+  line-height: 1.3rem;
+  overflow: hidden;
+}

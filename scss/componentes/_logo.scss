@@ -1,0 +1,23 @@
+/* logo */
+
+.logo {
+  width: $wt -3vw;
+  height: 20vh;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  @include flex(flex, column, center, center);
+
+
+}
+  .imagenLogo1 {
+    width: 25vw;
+    animation: aparecer 2s infinite;
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }

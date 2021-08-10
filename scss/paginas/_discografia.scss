@@ -1,0 +1,39 @@
+.discografia {
+  @include flex(flex,column,flex-start,flex-start);
+  flex-wrap: wrap;
+  img {
+    width: 600px;
+    @media (max-width: $celular) {
+      width: 300px;
+    }
+    @media (max-width: 350px) {
+      width: 200px;
+    }
+  }
+
+  .albums {
+    margin-left: 20vh;
+    width: 100vw;
+    height: 500px;
+    padding: 10px;
+      @include flex(flex,row,flex-start,flex-start);
+    @media (max-width: 516px) {
+      .albums {
+        flex-direction: column;
+      }
+    }
+  }
+  .disco {
+    margin-left: 30px;
+    @include flex(flex,column,flex-start,flex-start);
+    flex-wrap: wrap;
+    .disco1 {
+      color: $colorUno;
+      font-family: "Noto Sans", sans-serif;
+    }
+    .listaMusica {
+    @extend %fontUno;
+      color: aliceblue;
+    }
+  }
+}

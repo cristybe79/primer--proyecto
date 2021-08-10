@@ -1,0 +1,41 @@
+.fijoIndex {
+  width: 99vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(19, 18, 18)
+    ),
+    url(/img/irlanda.jpg);
+
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+/* barra de navegacion */
+.gridHeader {
+  width: 99vw;
+  @include grid(grid,100%,18% 15%,15px);
+  
+}
+  .barraNavegacion {
+  height: 5vh;
+  width: 50vw;
+  @include flex(flex,row,start,center);
+  & :hover {
+  background-color: cadetblue;
+  transform: scale(1px);
+  }
+  .navDes1{
+    color:cornflowerblue;
+    background-color: black;
+    text-shadow: 2px 2px 5px $colorUno;
+
+  }
+}
+.fijo {
+  width: 99vw;
+  @include grid(grid,100%,19% 15%,15px);
+  background-image: url(/img/irlanda.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,131 @@
+.fPage{
+  color:$colorDos;
+  background-color: $colorNueve;
+}
+.grid {
+  padding: 9px;
+  width: 90vw;
+  height: 70vh;
+  @include grid(grid, 1fr 1fr, 1fr, 2rem);
+  border-radius: 10px;
+  .gridCaja {
+    @include flex(flex, column, space-around, center);
+    border-radius: 10px;
+    width: 47vw;
+    height: 60vh;
+    transition-duration: 5s;
+    transform: scale(1, 0.9);
+    @each $texto-sing, $color in $singsColor {
+      .sing--#{$texto-sing} {
+        color: $color;
+      }
+    }
+  }
+  .imgf1 {
+    box-shadow: 10px 10px 10px grey;
+    background-image: url("/img/kodaline2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: imgf2 4s infinite;
+  }
+  @keyframes imgf2 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: 20px;
+      top: 0px;
+    }
+    50% {
+      left: 20px;
+      top: 20px;
+    }
+    75% {
+      left: 0px;
+      top: 20px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+.texto1 {
+  @include flex(flex, column, space-around, center);
+  width: $wt -70vw;
+  height: 60vh;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px grey;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(19, 18, 18)
+    ),
+    url(/img/concierto3red.jpg);
+  background-size: cover;
+  @media (max-width: $celular) {
+    margin: 20px 10px 0px 0px;
+    text-align: center;
+    width: $wt -50vw;
+    height: 30vh;
+    overflow: hidden;
+  }
+  .letra {
+    margin-right: 1.1vw;
+    margin-left: 1.1vw;
+    padding-top: 10;
+    height: 20vh;
+    font-family: "Noto Sans", sans-serif;
+    font-style: italic;
+    @extend %fontUno;
+    @media (max-width: 516px) {
+      font-size: $textSize - 0.2;
+      line-height: 1rem;
+    }
+  }
+  .tema1 {
+    border-radius: 15px;
+    top: 0.5rem;
+    transition-duration: 5s;
+    transform: rotate(-5deg);
+    text-align: left;
+    color: $colorTres;
+    &:hover {
+      transform: rotate(0deg);
+    }
+    font-size: $textSize + 0.1;
+  }
+  .tema2 {
+    text-align: right;
+    color: $colorTres;
+    transition-duration: 5s;
+    transform: rotate(5deg);
+    &:hover {
+      transform: rotate(0deg);
+    }
+  }
+
+}
+.gridError{
+  width:99vw;
+  height: 70vh;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(19, 18, 18)
+    ),
+    url(/img/concierto3red.jpg);
+      @include grid(grid, 1fr, 1fr, 0px);
+      @include flex(flex,column,center,center)
+
+}
+  .textoError{
+  @include flex(flex, column, space-around, center);
+  width: $wt -70vw;
+  height: 60vh;
+  overflow: hidden;
+  font-size: 3rem;
+  }
+

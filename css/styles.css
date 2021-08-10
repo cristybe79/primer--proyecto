@@ -1,0 +1,314 @@
+.texto1 .letra, .discografia .disco .listaMusica {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none; }
+
+body {
+  width: 99vw;
+  background-color: #131212;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  text-align: start; }
+  @media screen and (max-width: 1024px) {
+    body {
+      background-color: black; } }
+  @media screen and (max-width: 765px) {
+    body {
+      background-color: #5F9EA0; } }
+  @media (max-width: 516px) {
+    body {
+      background-color: aqua; }
+      body .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem; } }
+  @media (max-width: 350px) {
+    body {
+      background-color: cornflowerblue; } }
+
+/* logo */
+.logo {
+  width: 100vw -3vw;
+  height: 20vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.imagenLogo1 {
+  width: 25vw;
+  animation: aparecer 2s infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fijoIndex {
+  width: 99vw;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #131212), url(/img/irlanda.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* barra de navegacion */
+.gridHeader {
+  width: 99vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 18% 15%;
+  grid-column-gap: 15px; }
+
+.barraNavegacion {
+  height: 5vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  text-align: center; }
+  .barraNavegacion :hover {
+    background-color: cadetblue;
+    transform: scale(1px); }
+  .barraNavegacion .navDes1 {
+    color: cornflowerblue;
+    background-color: black;
+    text-shadow: 2px 2px 5px #5F9EA0; }
+
+.fijo {
+  width: 99vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 19% 15%;
+  grid-column-gap: 15px;
+  background-image: url(/img/irlanda.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.fPage {
+  color: #7e8083;
+  background-color: #252a2e; }
+
+.grid {
+  padding: 9px;
+  width: 90vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  border-radius: 10px; }
+  .grid .gridCaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    width: 47vw;
+    height: 60vh;
+    transition-duration: 5s;
+    transform: scale(1, 0.9); }
+    .grid .gridCaja .sing--sing1 {
+      color: aliceblue; }
+    .grid .gridCaja .sing--sing2 {
+      color: cornflowerblue; }
+    .grid .gridCaja .sing--sing3 {
+      color: violet; }
+    .grid .gridCaja .sing--sing4 {
+      color: lime; }
+    .grid .gridCaja .sing--sing5 {
+      color: aqua; }
+  .grid .imgf1 {
+    box-shadow: 10px 10px 10px grey;
+    background-image: url("/img/kodaline2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: imgf2 4s infinite; }
+
+@keyframes imgf2 {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 20px;
+    top: 0px; }
+  50% {
+    left: 20px;
+    top: 20px; }
+  75% {
+    left: 0px;
+    top: 20px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+
+.texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw -70vw;
+  height: 60vh;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px grey;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #131212), url(/img/concierto3red.jpg);
+  background-size: cover; }
+  @media (max-width: 516px) {
+    .texto1 {
+      margin: 20px 10px 0px 0px;
+      text-align: center;
+      width: 100vw -50vw;
+      height: 30vh;
+      overflow: hidden; } }
+  .texto1 .letra {
+    margin-right: 1.1vw;
+    margin-left: 1.1vw;
+    padding-top: 10;
+    height: 20vh;
+    font-family: "Noto Sans", sans-serif;
+    font-style: italic; }
+    @media (max-width: 516px) {
+      .texto1 .letra {
+        font-size: 0.8rem;
+        line-height: 1rem; } }
+  .texto1 .tema1 {
+    border-radius: 15px;
+    top: 0.5rem;
+    transition-duration: 5s;
+    transform: rotate(-5deg);
+    text-align: left;
+    color: black;
+    font-size: 1.1rem; }
+    .texto1 .tema1:hover {
+      transform: rotate(0deg); }
+  .texto1 .tema2 {
+    text-align: right;
+    color: black;
+    transition-duration: 5s;
+    transform: rotate(5deg); }
+    .texto1 .tema2:hover {
+      transform: rotate(0deg); }
+
+.gridError {
+  width: 99vw;
+  height: 70vh;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #131212), url(/img/concierto3red.jpg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.textoError {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw -70vw;
+  height: 60vh;
+  overflow: hidden;
+  font-size: 3rem; }
+
+.contacto {
+  border: black solid;
+  height: 50vh;
+  width: 50vw;
+  margin-left: 33%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: end; }
+
+.discografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: flex-start;
+  flex-wrap: wrap; }
+  .discografia img {
+    width: 600px; }
+    @media (max-width: 516px) {
+      .discografia img {
+        width: 300px; } }
+    @media (max-width: 350px) {
+      .discografia img {
+        width: 200px; } }
+  .discografia .albums {
+    margin-left: 20vh;
+    width: 100vw;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: flex-start; }
+    @media (max-width: 516px) {
+      .discografia .albums .albums {
+        flex-direction: column; } }
+  .discografia .disco {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: flex-start;
+    flex-wrap: wrap; }
+    .discografia .disco .disco1 {
+      color: #5F9EA0;
+      font-family: "Noto Sans", sans-serif; }
+    .discografia .disco .listaMusica {
+      color: aliceblue; }
+
+.mainEventos {
+  height: 130vh; }
+
+.carousel {
+  margin: 5rem 0 0 20rem;
+  width: 60vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.historiaDeLaBanda {
+  margin: 5vh;
+  padding-left: 15vh;
+  padding-right: 20vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  text-align: justify;
+  color: #7e8083;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.3rem;
+  overflow: hidden; }
+
+.play1 {
+  width: 100vw;
+  height: 60vh;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row; }
+  .play1 .letraPlaylist {
+    padding: 10px;
+    line-height: 1.3rem;
+    color: aliceblue;
+    font-family: "Noto Sans", sans-serif; }
+  .play1 .playA {
+    width: 50%;
+    height: 50%;
+    margin: 35px; }
