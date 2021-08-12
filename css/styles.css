@@ -37,7 +37,7 @@ body {
 /* logo */
 .logo {
   width: 100vw -3vw;
-  height: 20vh;
+  height: 30vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ body {
 
 .fijoIndex {
   width: 99vw;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #131212), url(/img/irlanda.jpg);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.945), rgba(19, 18, 18, 0.205)), url(/img/irlanda.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -65,7 +65,7 @@ body {
   width: 99vw;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 18% 15%;
+  grid-template-rows: 20% 25%;
   grid-column-gap: 15px; }
 
 .barraNavegacion {
@@ -99,24 +99,17 @@ body {
   background-color: #252a2e; }
 
 .grid {
-  padding: 9px;
-  width: 90vw;
-  height: 70vh;
+  width: 99vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
-  border-radius: 10px; }
+  grid-column-gap: 0rem; }
   .grid .gridCaja {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
-    border-radius: 10px;
-    width: 47vw;
-    height: 60vh;
-    transition-duration: 5s;
-    transform: scale(1, 0.9); }
+    height: 60vh; }
     .grid .gridCaja .sing--sing1 {
       color: aliceblue; }
     .grid .gridCaja .sing--sing2 {
@@ -128,7 +121,6 @@ body {
     .grid .gridCaja .sing--sing5 {
       color: aqua; }
   .grid .imgf1 {
-    box-shadow: 10px 10px 10px grey;
     background-image: url("/img/kodaline2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,8 +241,8 @@ body {
         width: 200px; } }
   .discografia .albums {
     margin-left: 20vh;
-    width: 100vw;
-    height: 500px;
+    width: 85vw;
+    height: 450px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -259,6 +251,12 @@ body {
     @media (max-width: 516px) {
       .discografia .albums .albums {
         flex-direction: column; } }
+    .discografia .albums .fotoAlbums {
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 5px;
+      width: 30vw;
+      height: 45vh;
+      padding: 10px; }
   .discografia .disco {
     margin-left: 30px;
     display: flex;
@@ -295,6 +293,13 @@ body {
   font-weight: 300;
   line-height: 1.3rem;
   overflow: hidden; }
+  .historiaDeLaBanda .imgHis {
+    width: 40vw;
+    float: left; }
+  .historiaDeLaBanda .imgHis1 {
+    margin: 5px;
+    width: 30vw;
+    float: right; }
 
 .play1 {
   width: 100vw;

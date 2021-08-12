@@ -8,4 +8,13 @@
   @include style($colorDos,$textSize,300);
   line-height: 1.3rem;
   overflow: hidden;
+  .imgHis{
+    width: 40vw;
+    float: left;
+  }
+    .imgHis1{
+    margin:5px;
+    width: 30vw;
+    float: right;
+  }
 }

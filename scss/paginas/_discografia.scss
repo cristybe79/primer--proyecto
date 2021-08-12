@@ -13,14 +13,23 @@
 
   .albums {
     margin-left: 20vh;
-    width: 100vw;
-    height: 500px;
+    width: 85vw;
+    height: 450px;
     padding: 10px;
-      @include flex(flex,row,flex-start,flex-start);
+
+    @include flex(flex,row,flex-start,flex-start);
     @media (max-width: 516px) {
       .albums {
         flex-direction: column;
       }
+    }
+    .fotoAlbums{
+              box-shadow: 10px 10px 10px grey;
+              border-radius: 5px;
+              width: 30vw;
+              height: 45vh;
+              padding: 10px;
+
     }
   }
   .disco {

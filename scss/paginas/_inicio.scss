@@ -3,18 +3,14 @@
   background-color: $colorNueve;
 }
 .grid {
-  padding: 9px;
-  width: 90vw;
-  height: 70vh;
-  @include grid(grid, 1fr 1fr, 1fr, 2rem);
-  border-radius: 10px;
+  width: 99vw;
+  @include grid(grid, 1fr 1fr, 1fr, 0rem);
+
   .gridCaja {
-    @include flex(flex, column, space-around, center);
-    border-radius: 10px;
-    width: 47vw;
+    @include flex(flex, column,center, center);
     height: 60vh;
-    transition-duration: 5s;
-    transform: scale(1, 0.9);
+    // transition-duration: 5s;
+    // transform: scale(1, 0.9);
     @each $texto-sing, $color in $singsColor {
       .sing--#{$texto-sing} {
         color: $color;
@@ -22,7 +18,7 @@
     }
   }
   .imgf1 {
-    box-shadow: 10px 10px 10px grey;
+
     background-image: url("/img/kodaline2.jpg");
     background-repeat: no-repeat;
     background-size: cover;

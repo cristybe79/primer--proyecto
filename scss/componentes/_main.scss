@@ -2,8 +2,8 @@
   width: 99vw;
   background-image: linear-gradient(
       to bottom,
-      rgba(245, 246, 252, 0.52),
-      rgb(19, 18, 18)
+      rgba(245, 246, 252, 0.945),
+      rgba(19, 18, 18, 0.205)
     ),
     url(/img/irlanda.jpg);
 
@@ -13,7 +13,7 @@
 /* barra de navegacion */
 .gridHeader {
   width: 99vw;
-  @include grid(grid,100%,18% 15%,15px);
+  @include grid(grid,100%,20% 25%,15px);
   
 }
   .barraNavegacion {
