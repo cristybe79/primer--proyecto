@@ -5,7 +5,7 @@
       rgba(245, 246, 252, 0.945),
       rgba(19, 18, 18, 0.205)
     ),
-    url(/img/irlanda.jpg);
+    url(./img/irlanda.jpg);
 
   background-size: cover; 
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 .fijo {
   width: 99vw;
   @include grid(grid,100%,19% 15%,15px);
-  background-image: url(/img/irlanda.jpg);
+  background-image: url(img/irlanda.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
